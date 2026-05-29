@@ -11,6 +11,7 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.StringJoiner;
 
 public class GuessCodeServiceImpl extends UnicastRemoteObject implements GuessCodeService {
     private static final long serialVersionUID = 1L;
@@ -86,6 +87,7 @@ public class GuessCodeServiceImpl extends UnicastRemoteObject implements GuessCo
                     guess,
                     result.getCorrectPosition(),
                     result.getCorrectNumberWrongPosition(),
+                    result.getCorrectNumberWrongPositionDigits(),
                     result.getIncorrect(),
                     true,
                     playerId,
@@ -97,6 +99,7 @@ public class GuessCodeServiceImpl extends UnicastRemoteObject implements GuessCo
                     guess,
                     result.getCorrectPosition(),
                     result.getCorrectNumberWrongPosition(),
+                    result.getCorrectNumberWrongPositionDigits(),
                     result.getIncorrect(),
                     false,
                     currentTurnPlayerId,
@@ -141,8 +144,8 @@ public class GuessCodeServiceImpl extends UnicastRemoteObject implements GuessCo
 
     private GuessResult evaluateGuess(String guess, String secret) {
         int correctPosition = 0;
-        int[] guessCounts = new int[10];
         int[] secretCounts = new int[10];
+        boolean[] matchedPositions = new boolean[CODE_LENGTH];
 
         for (int i = 0; i < CODE_LENGTH; i++) {
             char guessDigit = guess.charAt(i);
@@ -150,27 +153,50 @@ public class GuessCodeServiceImpl extends UnicastRemoteObject implements GuessCo
 
             if (guessDigit == secretDigit) {
                 correctPosition++;
+                matchedPositions[i] = true;
             } else {
-                guessCounts[guessDigit - '0']++;
                 secretCounts[secretDigit - '0']++;
             }
         }
 
-        int correctNumberWrongPosition = 0;
-        for (int digit = 0; digit <= 9; digit++) {
-            correctNumberWrongPosition += Math.min(guessCounts[digit], secretCounts[digit]);
+        List<Character> correctNumberWrongPositionDigits = new ArrayList<>();
+        for (int i = 0; i < CODE_LENGTH; i++) {
+            if (matchedPositions[i]) {
+                continue;
+            }
+
+            char guessDigit = guess.charAt(i);
+            int digitIndex = guessDigit - '0';
+            if (secretCounts[digitIndex] > 0) {
+                correctNumberWrongPositionDigits.add(guessDigit);
+                secretCounts[digitIndex]--;
+            }
         }
 
+        int correctNumberWrongPosition = correctNumberWrongPositionDigits.size();
         int incorrect = CODE_LENGTH - correctPosition - correctNumberWrongPosition;
         return new GuessResult(
                 guess,
                 correctPosition,
                 correctNumberWrongPosition,
+                formatDigits(correctNumberWrongPositionDigits),
                 incorrect,
                 false,
                 currentTurnPlayerId,
                 "Resultado calculado."
         );
+    }
+
+    private String formatDigits(List<Character> digits) {
+        if (digits.isEmpty()) {
+            return "";
+        }
+
+        StringJoiner joiner = new StringJoiner(", ");
+        for (Character digit : digits) {
+            joiner.add(String.valueOf(digit));
+        }
+        return joiner.toString();
     }
 
     private String buildMessage(Player player, Player opponent, boolean bothReady) {

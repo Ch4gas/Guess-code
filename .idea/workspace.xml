@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a846a2a9-1818-43c0-ac83-0a7af8467490" name="Changes" comment="" />
+    <list default="true" id="fe5d9b32-edaf-452d-a9bf-a25638506ccd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guesscode/model/GuessResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guesscode/model/GuessResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guesscode/server/GuessCodeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guesscode/server/GuessCodeServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="15" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,104 +33,82 @@
     &quot;accountId&quot;: &quot;a77c407a-b91b-423a-acbc-743fd45baf56&quot;
   }
 }</component>
-  <component name="NextEditCompletionFeaturesState">
-    <decayedCancelled>
-      <entry key="MS100" value="1.8459764550923183" />
-      <entry key="MS500" value="5.472611808079656" />
-      <entry key="S2" value="12.936074923719172" />
-      <entry key="S5" value="20.049812626873912" />
-      <entry key="S10" value="26.868857203882428" />
-      <entry key="S30" value="57.60223473247267" />
-      <entry key="S60" value="98.09765130859137" />
-      <entry key="M2" value="142.2166625403457" />
-      <entry key="M5" value="184.85414839144" />
-      <entry key="M10" value="203.13219959030224" />
-      <entry key="M15" value="209.78083042533274" />
-      <entry key="M30" value="216.73153259564828" />
-      <entry key="H1" value="220.32503048959552" />
-      <entry key="H2" value="222.15220130031605" />
-      <entry key="H4" value="223.0735057170386" />
-      <entry key="D1" value="223.84522247352385" />
-      <entry key="W1" value="223.97788004568403" />
-    </decayedCancelled>
-    <decayedSelected>
-      <entry key="MS100" value="1.9827232526049522E-35" />
-      <entry key="MS500" value="1.1467068846997899E-7" />
-      <entry key="S2" value="0.018401918587421573" />
-      <entry key="S5" value="0.2022764122463451" />
-      <entry key="S10" value="0.4497515005492984" />
-      <entry key="S30" value="0.7661683490332131" />
-      <entry key="S60" value="0.875310430095068" />
-      <entry key="M2" value="0.9355802638443522" />
-      <entry key="M5" value="0.9737162563873945" />
-      <entry key="M10" value="0.9867706199453824" />
-      <entry key="M15" value="0.9911608517905399" />
-      <entry key="M30" value="0.9955706161747343" />
-      <entry key="H1" value="0.9977828502107726" />
-      <entry key="H2" value="0.9988908099541076" />
-      <entry key="H4" value="0.9994452511038853" />
-      <entry key="D1" value="0.9999075204721259" />
-      <entry key="W1" value="0.9999867881152251" />
-    </decayedSelected>
-    <decayedShown>
-      <entry key="MS100" value="1.7976309893681943" />
-      <entry key="MS500" value="5.435668366523849" />
-      <entry key="S2" value="12.91211196436651" />
-      <entry key="S5" value="20.19278935336593" />
-      <entry key="S10" value="27.26313804974574" />
-      <entry key="S30" value="58.32902095607532" />
-      <entry key="S60" value="98.9412954817717" />
-      <entry key="M2" value="143.13013370797512" />
-      <entry key="M5" value="185.81668482753295" />
-      <entry key="M10" value="204.1128915286782" />
-      <entry key="M15" value="210.76782138467698" />
-      <entry key="M30" value="217.72495717681932" />
-      <entry key="H1" value="221.3217245893725" />
-      <entry key="H2" value="223.15054374274519" />
-      <entry key="H4" value="224.0726757788241" />
-      <entry key="D1" value="224.84508398880956" />
-      <entry key="W1" value="224.97786025818564" />
-    </decayedShown>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7,
-  &quot;fromUser&quot;: false
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="3EKQK2QouqiPtxuZ6KbbFBrqMSp" />
+  <component name="ProjectId" id="3EKVJDlyyFgLkPJOa451ZKicKdC" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Chagas-Estudos/Desktop/GuessCode&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.GuessCodeClient.executor": "Run",
+    "Application.GuessCodeServer.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "develop",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Chagas-Estudos/Desktop/GuessCode",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
+}]]></component>
+  <component name="RunManager" selected="Application.GuessCodeClient">
+    <configuration name="GuessCodeClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guesscode.client.GuessCodeClient" />
       <module name="GuessCode" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guesscode.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+    <configuration name="GuessCodeServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="guesscode.server.GuessCodeServer" />
       <module name="GuessCode" />
-      <option name="filePath" />
-      <method v="2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="guesscode.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.GuessCodeServer" />
+      <item itemvalue="Application.GuessCodeClient" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GuessCodeClient" />
+        <item itemvalue="Application.GuessCodeServer" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -131,12 +120,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a846a2a9-1818-43c0-ac83-0a7af8467490" name="Changes" comment="" />
-      <created>1779924713550</created>
+      <changelist id="fe5d9b32-edaf-452d-a9bf-a25638506ccd" name="Changes" comment="" />
+      <created>1779927173809</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1779924713550</updated>
-      <workItem from="1779924714632" duration="218000" />
+      <updated>1779927173809</updated>
+      <workItem from="1779927174995" duration="5000" />
+      <workItem from="1779927193397" duration="1992000" />
     </task>
     <servers />
   </component>

@@ -2,12 +2,15 @@ package guesscode.model;
 
 import java.io.Serializable;
 
+
+
 public class GuessResult implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private final String guess;
     private final int correctPosition;
     private final int correctNumberWrongPosition;
+    private final String correctNumberWrongPositionDigits;
     private final int incorrect;
     private final boolean won;
     private final int nextTurnPlayerId;
@@ -17,6 +20,7 @@ public class GuessResult implements Serializable {
             String guess,
             int correctPosition,
             int correctNumberWrongPosition,
+            String correctNumberWrongPositionDigits,
             int incorrect,
             boolean won,
             int nextTurnPlayerId,
@@ -25,6 +29,7 @@ public class GuessResult implements Serializable {
         this.guess = guess;
         this.correctPosition = correctPosition;
         this.correctNumberWrongPosition = correctNumberWrongPosition;
+        this.correctNumberWrongPositionDigits = correctNumberWrongPositionDigits == null ? "" : correctNumberWrongPositionDigits;
         this.incorrect = incorrect;
         this.won = won;
         this.nextTurnPlayerId = nextTurnPlayerId;
@@ -41,6 +46,10 @@ public class GuessResult implements Serializable {
 
     public int getCorrectNumberWrongPosition() {
         return correctNumberWrongPosition;
+    }
+
+    public String getCorrectNumberWrongPositionDigits() {
+        return correctNumberWrongPositionDigits;
     }
 
     public int getIncorrect() {
@@ -60,9 +69,16 @@ public class GuessResult implements Serializable {
     }
 
     public String toDisplayText() {
+        String wrongPositionText = correctNumberWrongPosition == 0
+                ? "nenhum"
+                : correctNumberWrongPosition + " (" + correctNumberWrongPositionDigits + ")";
+        String wrongPositionLabel = correctNumberWrongPosition == 1
+                ? "Numero certo na posicao errada"
+                : "Numeros certos na posicao errada";
+
         return "Palpite " + guess
                 + " | Posicao certa: " + correctPosition
-                + " | Numero certo na posicao errada: " + correctNumberWrongPosition
+                + " | " + wrongPositionLabel + ": " + wrongPositionText
                 + " | Incorretos: " + incorrect
                 + " | " + message;
     }

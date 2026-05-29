@@ -9,7 +9,7 @@ Projeto em Java com RMI para um jogo de adivinhar uma sequencia secreta de 4 num
 - Os turnos sao alternados.
 - A cada palpite, o servidor informa:
   - numeros corretos na posicao certa;
-  - numeros corretos na posicao errada;
+  - numeros corretos na posicao errada, junto com quais digitos foram encontrados;
   - numeros incorretos.
 - Vence quem acertar primeiro a sequencia do adversario.
 
