@@ -25,7 +25,7 @@ public class GuessCodeServiceImpl extends UnicastRemoteObject implements GuessCo
     private Integer winnerId;
 
     public GuessCodeServiceImpl() throws RemoteException {
-        super();
+        super(1100);
     }
 
     @Override
